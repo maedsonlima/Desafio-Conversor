@@ -1,16 +1,19 @@
 import java.io.IOException;
 
-public class Principal {
+public class Principal extends Moeda {
     public static void main(String[] args) throws IOException, InterruptedException {
         Menu meuMenu = new Menu ();
 
 
-        ApiRequisicao requisitar = new ApiRequisicao ();
+        Calculadora calculadora = new Calculadora();
 
         do {
             meuMenu.exibirTelaInicial();     // mostra o menu
-            requisitar.requistar();         // lê a escolha do usuário
-        } while (requisitar.getOpcaoEscolhida() != 7); // repete enquanto a escolha for diferente de 7
+            calculadora.requistar();         // lê a escolha do usuário
+            calculadora.converter();
+        } while (calculadora.getOpcaoEscolhida() != 7); // repete enquanto a escolha for diferente de 7
+
+
 
     }
 }
