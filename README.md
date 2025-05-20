@@ -88,4 +88,4 @@ Resultado: 100 USD = 13.500 ARS
 
 ---
 
-Desenvolvido com 💙 por [Seu Nome]
+Desenvolvido com 💙 por MAEDSON
